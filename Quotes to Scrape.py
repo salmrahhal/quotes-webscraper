@@ -26,7 +26,7 @@ while True:
             "tags": tags
         })
 
-    print(f"Scraped page {page_number}")
+    print(f"page {page_number}")
     page_number += 1 
 
 keys = quotes_details[0].keys()
@@ -35,4 +35,5 @@ with open("C:/Users/newtun/Desktop/quotes.csv", "w", newline='',encoding="utf-8"
     writer.writeheader()
     writer.writerows(quotes_details)
 
-print("CSV file created successfully")
+print("Done")
+
